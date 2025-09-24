@@ -20,4 +20,10 @@ def ligar(self):
 @classmethod
 
 def mudar_numero_rodas(cls, novas_rodas):
-    
+    cls.rodas = novas_rodas
+    print(f"Agora todos os carros tem {novas_rodas} rodas!")
+
+@staticmethod
+
+def calcular_idade(ano_fabricacao, ano_atual):
+    return ano_atual - ano_fabricacao
